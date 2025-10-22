@@ -413,10 +413,7 @@ class DownloadItem(QObject):
         self.done = True
         self.data_changed.emit()
         if self.fileobj is not None:
-            try:
-                self.fileobj.close()
-            except OSError:
-                log.downloads.exception("Error while closing file object")
+            self.fileobj.close()
 
     def init_reply(self, reply):
         """Set a new reply and connect its signals.

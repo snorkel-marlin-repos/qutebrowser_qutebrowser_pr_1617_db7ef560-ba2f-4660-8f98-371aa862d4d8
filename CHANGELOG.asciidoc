@@ -31,11 +31,6 @@ Changed
 - Aliases can now use `;;` to have an alias which executed multiple commands.
 - `:edit-url` now does nothing if the URL isn't changed in the spawned editor.
 
-Fixed
------
-
-- Fix crash when downloading with a full disk
-
 Removed
 ------
 
